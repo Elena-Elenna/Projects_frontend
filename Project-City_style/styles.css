@@ -1,0 +1,302 @@
+html, body {
+      height: 100%;
+      margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family:Geneva;
+    font-size: 15px;
+    background: url("./FOTO/fon.png");   
+    background-size:cover;       /* Масштабирует изображение */
+    background-position: center;    /* Центрирует его */
+    background-repeat: no-repeat;   /* Не повторяет */
+    background-attachment: fixed; 
+}
+
+
+main {
+    flex: 1; /* занимает всё свободное место */
+    padding: 20px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+    
+
+.header{
+    padding-top: 20px;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    white-space: nowrap;
+}
+
+.header_logo{
+    display:inline-block;
+    margin:0 600px;
+  }
+
+.logo_main, .logo_prefix {
+  display: inline-block; /* ← добавлено */
+}
+
+.logo_main{
+    font-size: 50px;
+    font-weight: 900;
+    color:#fff;
+    margin: 0;
+}
+
+.logo_prefix{
+    font-size: 30px;
+    font-weight: 900;
+    color:#fff;
+    margin: 0 10px;
+}
+
+.nav{
+    font-size: 14px;
+    margin: 0;
+    display:inline-block;
+    margin: -400px;
+}
+
+.login_visible {
+  display: inline-block; /* ← добавлено */
+  color:#74d11e;
+  margin: -15px 0;
+  font-size: 16px;
+  vertical-align: top;
+  white-space: pre;
+  display: none;
+}
+
+.login_click,
+.about_click,
+.contact_click{
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: top;
+    margin: -15px 0;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s linear;
+    background:none ;
+    border: none;
+}
+
+.login_click:after,
+.about_click:after,
+.contact_click:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #ad922d;
+    position: absolute;
+    top:100%;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+
+.login_click:hover,
+.about_click:hover,
+.contact_click:hover {
+    color: #ad922d;
+}
+
+
+.select{
+    width: 800px;
+    height: auto;
+    margin: 60px auto 20px auto;
+    display: flex;
+    border: 2px solid #74d11e;
+    border-radius: 4px;
+    justify-content: space-around;
+}
+
+.gender,
+.product,
+.price{
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    line-height: 0.5;
+}
+
+
+.select_gender_title,
+.select_product_title,
+.select_price_title{
+    color: #74d11e;
+    font-family:Geneva;;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.search_button {
+  outline: none;
+  width: 90px;
+  height: 53px;
+  background-color:#74d11e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 2px 50px;
+}
+
+.search_button:hover {
+  background-color: #3a6611;
+}
+
+.pictures-field{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+   
+    width: 100%;
+}
+
+
+.scroll-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background-color: #74d11e;
+  color: white;
+  font-size: 32px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  text-decoration: none;
+  z-index: 9999;
+}
+
+.scroll-top:hover {
+  background-color: #3a6611;
+}
+
+.login-form {
+  display: none;
+  flex-direction: column;
+  gap: 40px;
+  width: 350px;
+  height: 350px;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 40px;
+  background-color: white;
+  margin: 0 35%;
+
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input-label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+input {
+  outline: none;
+  width: 100%;
+  height: 25px;
+  border: 2px solid black;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.login-button-byForm {
+  outline: none;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(84, 84, 247);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.login-button-byForm:hover {
+  background-color: rgb(46, 46, 206);
+}
+
+.form-title {
+  color: rgb(105, 50, 105);
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 100px;
+}
+
+
+.info-form {
+  display: none;
+  flex-direction: column;
+  gap: 40px;
+  width: 350px;
+  height: 300px;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 40px;
+  background-color: #cbe2c6;
+  margin: 0 35%;
+
+}
+
+.info-title {
+  display: inline-block;
+  display: flex;
+  width: 350px;
+  color: #230ab4;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0 20px;
+  text-align: center;
+  white-space: pre;
+}
+
+
+.info-rest {
+  color: #333;
+  font-size: 20px;
+  width: 340px;
+  font-weight: bold;
+  margin: 0;
+  
+}
+
+.info-button-byForm {
+  outline: none;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(41, 41, 207);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.info-button-byForm:hover {
+  background-color: rgb(9, 9, 48);
+}

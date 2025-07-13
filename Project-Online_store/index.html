@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./js/array.js" defer></script>
+    <script src="./js/index.js" defer></script>
+</head>
+<body>
+    <div id="root">
+        <header>
+            <h1>Online Store</h1>
+        </header>
+        <main>
+            <!-- фильтры -->
+             <section class="filters" id="filters">
+                <label>
+                    Gender:
+                    <select id="gender-filter">
+                        <option value="">All</option>
+                        <option value="men">Men</option>
+                        <option value="women">Women</option>
+                    </select>
+                </label>
+                <!-- Alt+0128 = € -->
+                <label>
+                    Price:
+                    <select id="price-filter">
+                        <option value="">All</option>
+                        <option value="0-100">0 - 100 €</option>
+                        <option value="101-200">101 - 200 €</option>
+                        <option value="201-500">201 - 500 €</option>
+                    </select>
+                </label>
+                <label>
+                    Product:
+                    <select id="type-filter">
+                        <option value="">All</option>
+                        <option value="Jacket">Jacket</option>
+                        <option value="Sweater">Sweater</option>
+                        <option value="T-shirt">T-shirt</option>
+                        <option value="Jeans">Jeans</option>
+                    </select>
+                </label>
+                <label>
+                    Sort by price:
+                    <select id="sort-filter">
+                        <option value="">Default</option>
+                        <option value="asc">Price: Low to High</option>
+                        <option value="desc">Price: High to Low</option>
+                    </select>
+                </label>
+                <button id="search-button">Search</button>
+                <button id="reset-button">Reset</button>
+             </section>
+             <!-- контейнер для карточек -->
+              <section class="products-container"></section>
+        </main>
+        <footer>
+            <p>Copyright 2025 Lorem All rights Rcerved</p>
+        </footer>
+    </div>
+    <!-- кнопка возврата в начало(якорь-#filters) (↑ - Alt+24) -->
+     <!-- <a href="#filters" class="go-up" id="go-up-btn">↑ Return</a> -->
+     <a href="#root" class="go-up" id="go-up-btn">↑ Return</a>
+</body>
+</html>

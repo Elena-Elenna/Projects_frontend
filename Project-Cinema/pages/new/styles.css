@@ -1,0 +1,49 @@
+.main {
+  gap: 20px;
+  justify-content: center;
+  background-color: rgb(103, 99, 99);
+}
+
+.new_items {
+  width: 1000px;
+  height: 350px;
+}
+
+.foto_new {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 260px;
+  height: 350px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.text_new {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 740px;
+  height: 350px;
+  padding: 30px 40px;
+  color: white;
+}
+
+.new_title {
+  padding-left: 40px;
+  font-size: 40px;
+}
+
+.style_new {
+  font-size: 18px;
+}
+
+.new {
+  top: -5px;
+  right: -5px;
+  width: 100px;
+  background-color: green;
+  border: 2px solid rgb(1, 77, 1);
+  font-size: 24px;
+  color: whitesmoke;
+}

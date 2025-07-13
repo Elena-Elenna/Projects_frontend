@@ -1,0 +1,49 @@
+.main {
+  gap: 20px;
+  justify-content: flex-start;
+  background-color: rgb(103, 99, 99);
+}
+
+.new_items_movies {
+  width: 350px;
+  height: 1100px;
+}
+
+.foto_movies {
+  width: 310px;
+  height: 400px;
+  border-radius: 20px;
+  padding-bottom: 20px;
+}
+
+.text_movies {
+  width: 250px;
+  height: 450px;
+  padding: 10px;
+  color: white;
+}
+
+.movies_title {
+  padding-left: 30px;
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+.style_movies {
+  font-size: 16px;
+}
+
+.online_movies {
+  bottom: -6px;
+  right: -6px;
+  width: 140px;
+  background: linear-gradient(
+    to left,
+    rgb(71, 71, 231),
+    rgb(12, 180, 12),
+    yellow
+  );
+  border: 2px solid rgb(26, 26, 246);
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+}

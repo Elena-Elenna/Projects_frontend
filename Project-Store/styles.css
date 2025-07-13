@@ -1,0 +1,435 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Полоска промоакции */
+.promo_bar {
+  background-color: #201f1f;
+  color: white;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.promo_bar a {
+  color: white;
+  text-decoration: underline;
+  margin-left: 5px;
+}
+
+/* Основной блок с логотипом и иконками */
+.header_main {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+  align-items: flex-end;
+}
+
+.logo {
+  font-size: 30px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.header_icons {
+  display: flex;
+}
+
+.header_icons a {
+  color: #333;
+  text-decoration: none;
+  padding: 0px 0px 0px 30px;
+}
+
+.header_icons img {
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+/* Навигация */
+.nav_container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 10px 40px;
+  background-color: #fff;
+  border: 1px solid #212020;
+}
+
+.nav_container a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav_container a:hover {
+  text-decoration: underline;
+}
+
+/* Видео-баннер */
+.video-banner {
+  margin-top: 100px; /* для отступа от header */
+  width: 100%;
+  height: 650px;
+  position: relative;
+}
+
+.video-banner video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Фильтры */
+.filters {
+  display: flex;
+  gap: 10px;
+  margin: 20px;
+  justify-content: center;
+}
+
+.filters select {
+  padding: 5px;
+}
+
+.filters button {
+  padding: 5px 10px;
+}
+
+/* Main контейнер */
+.main_container {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: 50px;
+  padding: 30px 50px 30px 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Карточки */
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  background: #f9f9f9;
+  text-align: center;
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+  width: 400px;
+  height: 500px;
+}
+
+.card_img {
+  width: 100%;
+  height: 405px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card_status {
+  position: absolute;
+  width: fit-content;
+  border: 1px solid black;
+  top: -6px;
+  right: -6px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card_status_inStock {
+  background-color: white;
+}
+
+.card_status_outStock {
+  background-color: #ccc;
+}
+
+.card_gender,
+.card_title {
+  font-size: 18px;
+}
+
+.card_price {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.card_favorite_icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* Срелка GoUp */
+.arrow_up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1;
+  height: 50px;
+  width: 50px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.arrow_up:hover {
+  background-color: #2b2a2a;
+}
+
+/* Поисковая строка с кнопкой внутри */
+.search-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #555;
+  width: 250px;
+  height: 32px;
+  background-color: white;
+}
+
+#searchInput {
+  flex: 1;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 0px 10px;
+  font-size: 15px;
+}
+
+#searchButton {
+  border: none;
+  background-color: transparent;
+  height: 100%;
+  padding: 0px 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#searchButton img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+/* Стили для footer*/
+
+.site-footer {
+  background-color: #eeeeee;
+  padding: 30px 20px;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}
+
+.social-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  margin: 0 8px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+.account-locator {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.account,
+.locator {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  flex-wrap: wrap;
+}
+
+.footer-links h4 {
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.payment-section {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.payment-icons img {
+  margin: 5px 10px;
+  height: 24px;
+}
+
+.mobile-site {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.mobile-site a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* copyright {
+  text-align: center;
+  font-size: 12px;
+  color: #777;
+} */
+
+#productSearchButton,
+#clearFilterButton {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#productSearchButton {
+  background-color: #ccc;
+  color: black;
+}
+
+#clearFilterButton {
+  background-color: black;
+  color: white;
+}
+
+/*Чтоб прокручивала кнопка GoUp до фильтров. Используется для задания отступа сверху при прокрутке к якорю #filtersSection.*/
+html {
+  scroll-padding-top: 140px; /* Высота header (примерно 120px) */
+}
+
+.card_title_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.left_block {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
+}
+
+
+ /* Стрелочки переключения */
+
+
+.image-container {
+  position: relative;
+  width: 100%;
+}
+
+.prev-btn, .next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+.prev-btn:hover, .next-btn:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.favorites_wrapper {
+  position: relative;
+  display: flex;
+}
+
+.favorites_counter {
+  position: absolute;
+  top: 0;
+  right: -5px;
+  background-color: red;
+  color: white;
+  font-size: 3px;
+  border-radius: 50%;
+  padding: 1px 2px;
+  display: none; /* скрыта по умолчанию */
+}

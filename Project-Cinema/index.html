@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinema</title>
+    <link
+      rel="stylesheet"
+      href="./commonStyles/globalStyles.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./commonStyles/elements.css" type="text/css" />
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+  </head>
+  <body>
+    <div id="root">
+      <header class="header">
+        <div id="logo_header" class="company_name">Cinema</div>
+        <nav class="nav">
+          <a class="nav_style" href="./pages/new/" target="_blank">Новинки</a>
+          <a class="nav_style" href="./pages/movies/" target="_blank">Фильмы</a>
+          <a class="nav_style" href="./pages/series/" target="_blank"
+            >Мультфильмы</a
+          >
+          <a  id="login_header" class="nav_style" href="./pages/registration/" target="_blank"
+            >Вход</a
+          >
+        </nav>
+      </header>
+      <main class="main">
+        <form class="user_form_cinema">
+          <div>
+            <input                              
+              class="user_input_cinema  input"
+              placeholder="Поиск..."
+              name="name_film"
+            />
+          </div>
+          <button type="submit" class="create_user_cinema  create">Найти</button>
+        </form>
+        <div>                                                                                                      
+          <img
+            class="film_cinema"
+            src="https://avatars.mds.yandex.net/get-kinopoisk-image/10900341/87aec350-5b0e-49d7-b3cd-2da09f51ef3d/600x900"
+            alt="Рейс навылет"
+          />
+          <img
+            class="film_cinema"
+            src="https://avatars.mds.yandex.net/get-kinopoisk-image/10703859/f8649110-7bad-49db-b257-e8301e447337/600x900"
+            alt="Кракен"
+          />
+          <img
+            class="film_cinema"
+            src="https://avatars.mds.yandex.net/get-kinopoisk-image/9784475/c056e132-d2d3-4282-95b6-e302283005f3/600x900"
+            alt="Джун и Джон"
+          />
+          <img
+            class="film_cinema"
+            src="https://avatars.mds.yandex.net/get-kinopoisk-image/4483445/bb08a1cd-ea49-44ed-b48f-51514c9d6b4c/600x900"
+            alt="Ждун"
+          />
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="company_name">Cinema</div>
+        <a class="nav_style" href="#">Связь с администрацией</a>
+        <a class="nav_style" href="#">Контакты</a>
+        <a class="nav_style" href="#">Соглашения</a>
+        <a class="nav_style" href="#">Политика конфиденциальности</a>
+      </footer>
+    </div>
+  </body>
+</html>

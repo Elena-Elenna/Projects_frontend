@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+
+*
+  margin: 0
+  padding: 0
+
+body
+  font-family: "Poppins", sans-serif
+  font-weight: 400
+  color: #fff
+  font-size: 16px
+  background: #000
+
+a
+  text-decoration: none
+
+img
+  max-width: 100%
+
+.wrapper
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(26,14,1,1) 100%)
+  width: 100%
+  overflow-x: hidden
+
+.container
+  width: 1400px
+  margin: 0 auto
+
+header
+  padding: 50px 0
+
+  .logo
+    text-transform: uppercase
+    font-size: 29px
+    font-weight: 800
+
+  nav
+    float: right
+    width: 50%
+
+    ul
+      list-style: none
+      display: flex
+      justify-content: space-between
+      position: relative
+
+      li
+        display: inline-block
+
+        &.btn a
+          background: #FA9021
+          padding: 9px 17px
+          border-radius: 5px
+          transition: all 500ms ease
+
+          &:hover
+            background: #a02604
+
+        &.active::after
+          content: ''
+          display: block
+          width: 40px
+          height: 5px
+          background: #DC7000
+          border-radius: 10px
+          position: relative
+          top: 10px
+          left: -15px
+
+        &:not(.active):not(.btn) a:hover
+          border-bottom: 5px solid #DC7000
+
+        a
+          color: #fff
+
+.email
+  .block
+    background: #1C140F
+    margin-top: 30px
+    border-radius: 10px
+    padding: 40px 3%
+    width: 94%
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    h4
+      font-size: 30px
+      font-weight: 500
+
+    p
+      width: 500px
+
+    input
+      background: #fff
+      outline: none
+      border: 0
+      border-radius: 5px
+      width: 380px
+      font-family: "Poppins", sans-serif
+      font-weight: 400
+      padding: 20px 30px
+      position: relative
+      right: -100px
+      z-index: 1
+      padding-right: 120px
+
+      &::placeholder
+        color: #898989
+
+    button
+      background: #FA9021
+      padding: 9px 17px
+      border-radius: 5px
+      transition: all 500ms ease
+      cursor: pointer
+      border: 0
+      position: relative
+      z-index: 2
+      color: #fff
+
+      &:hover
+        background: #a02604
+
+.hero
+  padding-bottom: 100px
+  position: relative
+
+  &--info
+    width: 530px
+    padding-top: 70px
+
+    h2
+      color: #E87D0E
+      font-size: 20px
+      font-weight: 600
+
+    h1
+      font-size: 50px
+      font-weight: 600
+
+    p
+      font-weight: 500
+      line-height: 170%
+      margin: 30px 0
+
+    .btn
+      background: #FA8305
+      color: #fff
+      border-radius: 50px
+      padding: 15px 30px
+      border: 0
+      transition: all 500ms ease
+      font-size: 17px
+
+      &:hover
+        cursor: pointer
+        transform: scale(1.1)
+
+.hero-about
+  position: relative
+
+  .info
+    width: 500px
+    padding: 130px 0
+
+    h1
+      margin-bottom: 15px
+      font-size: 30px
+
+    .btn
+      margin-top: 20px
+      background: #FA8305
+      color: #fff
+      border-radius: 50px
+      padding: 15px 30px
+      border: 0
+      transition: all 500ms ease
+      font-size: 17px
+
+      &:hover
+        cursor: pointer
+        transform: scale(1.1)
+
+  img
+    position: absolute
+    right: -60px
+    top: 0
+
+.hero img
+  position: absolute
+  top: 0
+  right: 0
+
+.foto
+  width: 600px
+  height: 600px
+  border-radius: 100%
+
+.img
+  width: 320px
+  height: 300px
+  border-radius: 15px
+
+.trending
+  padding-top: 50px
+
+  h3
+    font-weight: 600
+    font-size: 31px
+
+  .see-all
+    display: block
+    color: #fff
+    background: #25211D
+    border-radius: 5px
+    padding: 12px 23px
+    float: right
+    transition: all 500ms ease
+
+    &:hover
+      transform: scale(1.1)
+
+  .games
+    display: flex
+    justify-content: space-between
+    width: 100%
+    padding: 50px 0
+
+    span
+      display: block
+      text-align: center
+      margin-top: 20px
+
+      img
+        width: 18.75px
+        height: 25px
+        position: relative
+        top: 5px
+        margin-right: 7px
+
+.big-text
+  padding: 50px 0
+  font-size: 35px
+  font-weight: 600
+  text-align: center
+  width: 800px
+
+.banner
+  h3
+    font-size: 30px
+    font-weight: 600
+    margin-bottom: 30px
+
+  p
+    line-height: 170%
+    margin-bottom: 30px
+    width: 550px
+
+  img
+    padding: 80px 0
+    width: 100%
+    margin-bottom: 30px
+
+.features
+  background: rgb(189, 142, 142) no-repeat center center fixed
+  background-size: cover
+  padding: 80px 0
+
+  h3
+    margin-bottom: 20px
+    text-align: center
+    max-width: 800px
+    margin-left: auto
+    margin-right: auto
+    font-size: 30px
+
+  p
+    margin-bottom: 20px
+    text-align: center
+    max-width: 800px
+    margin-left: auto
+    margin-right: auto
+
+  .info
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+
+    .block
+      text-align: center
+      width: 20%
+      margin: 30px 2%
+
+      img
+        width: 50px
+        height: 50px
+        margin-bottom: 15px
+
+      .arrow
+        width: 25px
+        height: 25px
+
+.progects
+  padding: 100px 0
+
+  h3
+    font-size: 30px
+    text-align: center
+
+  p
+    margin: 40px 0
+    text-align: center
+
+  .imeges
+    display: flex
+    justify-content: space-around
+    margin-bottom: 25px
+
+    img
+      width: 400px
+      height: 300px
+      border-radius: 15px
+
+    .img-1
+      width: 300px
+
+  .see-all
+    display: block
+    color: #fff
+    background: #25211D
+    border-radius: 5px
+    padding: 12px 23px
+    transition: all 500ms ease
+    float: none
+    width: 60px
+    text-align: center
+    margin: 0 auto
+
+  .see-all:hover
+    transform: scale(1.1)
+
+.email
+  padding-bottom: 120px
+
+  h3
+    margin-top: 60px
+    font-size: 30px
+
+.work
+  padding: 80px 0
+
+  h2
+    font-size: 25px
+    margin-bottom: 40px
+
+  .blocks
+    display: flex
+    justify-content: space-between
+
+    .block
+      width: 25%
+      padding: 50px 35px
+      border-radius: 10px
+      background: #1C140F
+
+      h3
+        font-size: 20px
+        margin: 20px 0
+
+      .badge
+        border-radius: 7px
+        padding: 10px 20px
+
+        &.purple
+          background: #560F67
+
+        &.brown
+          background: #31190D
+
+        &.green
+          background: #192A1D
+
+.hero-contacts
+  h1
+    text-align: center
+    margin-top: 70px
+    margin-bottom: 30px
+    font-size: 33px
+
+  p
+    text-align: center
+
+  img
+    width: 70%
+    margin: 80px 15%
+
+.feedback
+  padding: 70px 0
+  background: #1C140F
+
+  h2
+    text-align: center
+    font-weight: 500
+    font-size: 30px
+
+  p
+    margin-top: 10px
+    text-align: center
+
+  form
+    margin: 80px auto
+    width: 600px
+
+    .inline
+      display: flex
+      justify-content: space-between
+
+      > div
+        width: 50%
+
+    label
+      color: #4F4F4F
+      font-size: 14px
+
+    textarea, input
+      background: #2C2420
+      border-radius: 10px
+      border: 0.6px solid #CECECE
+      display: block
+      width: 90%
+      padding: 15px 10px
+      outline: none
+      color: #fff
+      margin-bottom: 20px
+      margin-top: 7px
+
+    textarea
+      resize: none
+      height: 200px
+
+    .one-line
+      width: 96%
+
+    button
+      background-color: #DC7000
+      border-radius: 5px
+      border: 0
+      float: right
+      cursor: pointer
+      color: #fff
+      padding: 15px 35px
+      transition: all 500ms ease
+
+      &:hover
+        background: #b01414
+
+footer
+  background: #000
+  padding: 50px 0
+
+  .blocks
+    display: flex
+    justify-content: space-between
+
+    .logo
+      text-transform: uppercase
+      font-size: 29px
+      font-weight: 800
+      
+    p
+      width: 300px
+      margin: 15px 0
+
+    h4
+      font-weight: 500
+      font-size: 17px
+
+    ul
+      list-style: none
+
+      li
+        margin-top: 7px
+        opacity: 0.8
+
+  hr
+    margin: 30px 0
+    border: 0
+    height: 0.6px
+    background: #ccc
+
+  > p
+    text-align: center

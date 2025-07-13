@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head lang="en">
+    <title>CITY STYLE</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+    <script src="./index.js" defer></script>
+  </head>
+<body>
+
+  <header class="header">
+    <div class="header_logo">
+        <h1 class="logo_main">CITY STYLE</h1>
+        <h1 class="logo_prefix">fashion store</h1>
+    </div>    
+    <div class="nav">
+            <button class="about_click">ABOUT</button>
+            <button class="contact_click">CONTAKT</button>
+            <button class="login_click">LOGIN</button>
+            <div class="login_visible">not</div>
+    </div>
+  </header>
+  <a id="top"></a>
+  <main>
+     <div class="select">
+        <div class="gender">
+            <h1 class="select_gender_title">Gender</h1>
+            <select name="select_gender">
+                id="gender-select"
+                <option value="man" selected>Man</option>
+                <option value="woman" >Woman</option>
+            </select>
+        </div>
+        <div class="product">
+            <h1 class="select_product_title">Choose product</h1>
+            <select name="select_product">
+                id="product-select"
+                <option value="Jeans" selected>Jeans</option>
+                <option value="T-Shirt" >T-Shirt</option>
+                <option value="Jacket" >Jacket</option>
+                <option value="Sweater" >Sweater</option>
+            </select>
+        </div>
+        <div class="price">
+            <h1 class="select_price_title">Price</h1>
+            <select name="select_price">
+                id="price-select"
+                <option value="all" selected>all</option>
+                <option value="-"></option>
+                <option value="-"></option>
+                <option value="-"></option>
+                <option value="-"></option>
+            </select>
+        </div>
+        <button class="search_button">Search</button>    
+    </div>
+    <div class="pictures-field"></div>
+
+    <a href="#top" class="scroll-top">↑</a>
+
+    <form class="login-form">
+        <p class="form-title">Login form</p>
+        <div class="input-container">
+          <label class="input-label" for="email-input">Email</label>
+          <input
+            name="email"
+            placeholder="Enter your email"
+            id="email-input"
+            type="email"
+          />
+        </div>
+        <div class="input-container">
+          <label class="input-label" for="password-input">Password</label>
+          <input
+            name="password"
+            placeholder="Enter your password"
+            id="password-input"
+            type="password"
+          />
+        </div>
+        <button class="login-button-byForm" type="submit">Log in</button>
+      </form>
+
+      <form class="info-form">
+            <div class="info-title"></div>
+            <div class="info-rest"></div>
+        <button class="info-button-byForm" type="submit">OK</button>
+      </form>
+  </main>
+
+  <footer>
+    © 2025 CITY STILE Company. All rights reserved. Tel: +49(089)-111-111, Email: city-style@mail.com
+  </footer>
+
+</body>
+</html>

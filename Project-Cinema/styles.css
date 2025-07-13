@@ -1,0 +1,54 @@
+.header {
+  background-color: transparent;
+}
+
+.main {
+  position: relative;
+  justify-content: center;
+  align-items: end;
+  gap: 50px;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(https://kartinki.pics/pics/uploads/posts/2022-08/thumbs/1659655283_46-kartinkin-net-p-sinie-abstraktnie-oboi-krasivo-52.jpg);
+}
+
+.user_form_cinema {
+  display: flex;
+  gap: 5px;
+  min-height: 40px;
+  min-width: 250px;
+  background-color: transparent;
+}
+
+.user_input_cinema {
+  font-size: 14px;
+  border-radius: 8px;
+  background-color: rgb(222, 229, 229);
+}
+
+.create_user_cinema {
+  width: 60px;
+  height: 30px;
+  font-size: 14px;
+  background-color: rgb(11, 3, 254);
+  border: 1px solid rgb(11, 1, 71);
+}
+
+.create_user_cinema:hover {
+  background-color: rgb(2, 196, 2);
+  box-shadow: 0px 0px 5px rgb(170, 184, 170);
+}
+
+.film_cinema {
+  width: 300px;
+  height: 400px;
+  padding: 3px;
+  background-color: rgb(0, 0, 93);
+  cursor: pointer;
+}
+
+.film_cinema:hover {
+  background-color: rgb(1, 43, 250);
+  box-shadow: -5px -5px 5px rgb(169, 168, 168);
+}

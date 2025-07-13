@@ -1,0 +1,44 @@
+.main {
+  gap: 20px;
+  justify-content: end;
+  background-image: url(https://thumbs.dreamstime.com/b/%D1%80%D1%8B%D0%B6%D0%B8%D0%B9-%D0%BA%D0%BE%D1%82-%D0%BF%D0%BE%D0%BA%D0%B0%D0%B7%D1%8B%D0%B2%D0%B0%D0%B5%D1%82-%D0%BF%D0%B0%D0%BB%D1%8C%D1%86%D0%B5%D0%BC-%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F-%D0%B8%D0%BB%D0%BB%D1%8E%D1%81%D1%82%D1%80%D0%B0%D1%86%D0%B8%D1%8F-%D1%83%D0%BB%D1%8B%D0%B1%D0%B0%D1%8E%D1%89%D0%B5%D0%B3%D0%BE%D1%81%D1%8F-223752151.jpg);
+  background-repeat: no-repeat;
+}
+
+.series_items {
+  width: 1000px;
+  height: 355px;
+}
+
+.foto_series {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 260px;
+  height: 353px;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+
+.text_series {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 740px;
+  height: 350px;
+  padding: 30px 40px;
+  color: white;
+}
+
+.series_title {
+  padding-left: 40px;
+  font-size: 35px;
+}
+
+.style_series {
+  font-size: 17px;
+}
+
+#arrow_up_box_left {
+  left: 10px;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Вход</title>
+    <link rel="stylesheet" href="../../commonStyles/globalStyles.css" />
+    <link rel="stylesheet" href="../../commonStyles/elements.css" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="root">
+      <header class="header">
+        <a id="logo_header" href="../../index.html" class="company_name">Cinema</a>
+        <nav class="nav">
+          <a class="nav_style" href="../new/" target="_blank">Новинки</a>
+          <a class="nav_style" href="../movies/" target="_blank">Фильмы</a>
+          <a class="nav_style" href="../series/" target="_blank">Мультфильмы</a>
+          <a id="login_header" class="active__link nav_style" href="./index.html">Вход</a>
+        </nav>
+      </header>
+      <main class="main">
+        <form class="user_form">
+          <p class="form_title">Регистрация</p>
+          <div class="input_container">
+            <label class="form_label" for="user_email">Email*</label>
+            <input
+              required
+              id="user_email"
+              class="user_input  input"
+              placeholder="Enter your email"
+              type="email"
+              name="email"
+            />
+          </div>
+          <div class="input_container">
+            <label class="form_label" for="user_password">Password*</label>
+            <input
+              required
+              id="user_password"
+              class="user_input  input"
+              placeholder="Enter your password"
+              type="password"
+              name="password"
+            />
+          </div>
+          <div class="checkbox_container">
+            <input
+              required
+              id="checkbox_input"
+              class="user_checkbox"
+              type="checkbox"
+              name="agree"
+            />
+            <label class="form_label" for="checkbox_input">I agree</label>
+          </div>
+          <button id="login_form" type="submit" class="create_user  create">Вход</button>
+          <button id="clear_form" class="create_user  create" type="reset">Очистить форму</button>
+          <button id="registration_form" type="submit" class="create_user  create">Регистрация</button>
+        </form>
+      </main>
+      <footer class="footer">
+        <div class="company_name">Cinema</div>
+        <a class="nav_style" href="#">Связь с администрацией</a>
+        <a class="nav_style" href="#">Контакты</a>
+        <a class="nav_style" href="#">Соглашения</a>
+        <a class="nav_style" href="#">Политика конфиденциальности</a>
+      </footer>
+    </div>
+  </body>
+</html>
